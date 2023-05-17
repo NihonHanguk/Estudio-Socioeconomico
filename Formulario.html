@@ -1,0 +1,451 @@
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+	<link rel="stylesheet" href="estilo2.css?1.0"/>
+	<!- -->
+	<meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+	<!- -->
+	<title>Contesta el formulario</title>
+</head>
+<body background="PC Background (5).png">
+	<header id="main-header">
+		<div class="flexbox-align">
+			<div class="encabezado">
+				<img src="Logo SurveyTech.svg" class="logo">&nbsp;&nbsp;&nbsp;
+			</div>
+			<div class="encabezado">
+				<h2>SurveyTech.com</h2>							
+			</div>
+		</div>		
+		<div class="flexbox-align">
+			<h1>ESTUDIO SOCIOECONÓMICO</h1>	
+		</div>
+	</header>
+	<section id="main-content" class="centrarParrafo">
+		<article>
+			<div class="content">
+				<h1 class="subt">DATOS DE IDENTIFICACIÓN</h1>
+				<form action="DatosRegistrados.php" method="POST" height=30px>
+					<p>Nombres: <input type="text" name="nombres" size="50" pattern="[a-zA-Zá-úÁ-Ú ]+" required/></p>
+					<p>Apellido paterno: <input type="text" name="apellidoPaterno" size="40" maxlength="40" pattern="[a-zA-Zá-úÁ-Ú ]+" required/></p>
+					<p>Apellido materno: <input type="text" name="apellidoMaterno" size="40" maxlength="40" pattern="[a-zA-Zá-úÁ-Ú ]+" required/></p>
+					<p>Fecha de nacimiento: <input type="date" name="fechaNac" size="8" min="1900-01-01" max="2023-05-16" pattern="[0-9]+" required/></p>
+					<p>CURP: <input type="text" name="curp" size="18" maxlength="18" minlength="18" pattern="[a-zA-Z0-9]+" required/></p>
+					<p>Sexo:
+						<input type="radio" name="rdbS" value="Femenino" required/>Femenino
+						<input type="radio" name="rdbS" value="Masculino"/>Masculino
+					</p>
+					<p>Nacionalidad: 
+					<select name="nacionalidad" size="1" required/>
+						<option value="" disabled selected hidden>Seleccione su nacionalidad</option> 
+						<option>Mexicana</option>
+						<optgroup label="--Asia--"> 
+						   <option>Afgana</option> 
+						   <option>Armenia</option> 
+						   <option>Azerí</option> 
+						   <option>Bangladeshí</option> 
+					       <option>Bareiní</option> 
+						   <option>Birmana</option> 
+						   <option>Bruneana</option> 
+						   <option>Butanesa</option> 
+						   <option>Camboyana</option> 
+						   <option>Catarí</option> 
+					       <option>China</option>
+					       <option>Emiratí</option>
+					       <option>Esrilanquesa</option>
+					       <option>Filipina</option>
+					       <option>India</option>
+					       <option>Indonesia</option>
+					       <option>Iraní</option>
+					       <option>Iraquí</option>
+					       <option>Israelí</option>
+					       <option>Japonesa</option>
+					       <option>Jordana</option>
+					       <option>Kazaja</option>
+					       <option>Kirguisa</option>
+					       <option>Kuwaití</option>
+					       <option>Laosiana</option>
+					       <option>Libanesa</option>
+					       <option>Malaya</option>
+					       <option>Maldiva</option>
+					       <option>Mongola</option>
+					       <option>Nepalesa</option>
+					       <option>Norcoreana</option>
+					       <option>Omaní</option>
+					       <option>Pakistaní</option>
+					       <option>Saudí</option>
+					       <option>Singapurense</option>
+					       <option>Siria</option>
+					       <option>Surcoreana</option>
+					       <option>Tailandesa</option>
+					       <option>Taiwanesa</option>
+					       <option>Tayika</option>
+					       <option>Timorense</option>
+					       <option>Turca</option>
+					       <option>Turcomana</option>
+					       <option>Uzbeka</option>
+					       <option>Vietnamita</option>
+					       <option>Yemení</option>					
+						<optgroup label="--Europa--"> 
+					       <option>Albanesa</option>
+				           <option>Alemana</option>
+				           <option>Andorrana</option>
+				           <option>Armenia</option>
+				           <option>Austriaca</option>
+				           <option>Belga</option>
+				           <option>Bielorrusa</option>
+				           <option>Bosnioherzegovina</option>
+				           <option>Británica</option>
+				           <option>Búlgara</option>
+				           <option>Checa</option>
+				           <option>Chipriota</option>
+				           <option>Croata</option>
+				           <option>Danesa</option>
+				           <option>Eslovaca</option>
+				           <option>Eslovena</option>
+				           <option>Española</option>
+				           <option>Estonia</option>
+				           <option>Finlandesa</option>
+				           <option>Francesa</option>
+				           <option>Georgiana</option>
+				           <option>Griega</option>
+				           <option>Húngara</option>
+				           <option>Irlandesa</option>
+				           <option>Islandesa</option>
+				           <option>Italiana</option>
+				           <option>Letona</option>
+				           <option>Liechtensteiniana</option>
+				           <option>Lituana</option>
+				           <option>Luxemburguesa</option>
+				           <option>Macedonia</option>
+				           <option>Maltesa</option>
+				           <option>Moldava</option>
+				           <option>Monegasca</option>
+				           <option>Montenegrina</option>
+				           <option>Neerlandesa</option>
+				           <option>Noruega</option>
+				           <option>Polaca</option>
+				           <option>Portuguesa</option>
+				           <option>Rumana</option>
+				           <option>Rusa</option>
+				           <option>Sanmarinense</option>
+				           <option>Serbia</option>
+				           <option>Sueca</option>
+				           <option>Suiza</option>
+				           <option>Ucraniana</option>           
+				           <option>Vaticana</option>
+						</optgroup> 
+						<optgroup label="--América--"> 
+				           <option>Antigüana</option>
+				           <option>Argentina</option>
+				           <option>Bahameña</option>
+				           <option>Barbadense</option>
+				           <option>Beliceña</option>
+				           <option>Boliviana</option>
+				           <option>Brasileña</option>
+				           <option>Canadiense</option>
+				           <option>Chilena</option>
+				           <option>Colombia</option>
+				           <option>Costarricense</option>
+				           <option>Cristobaleña</option>
+				           <option>Cubana</option>
+				           <option>Dominicana</option>
+				           <option>Dominiquesa</option>
+				           <option>Ecuatoriana</option>
+				           <option>Estadounidense</option>
+				           <option>Granadina</option>
+				           <option>Guatemalteca</option>
+				           <option>Guyanesa</option>
+				           <option>Haitiana</option>
+				           <option>Hondureña</option>
+				           <option>Jamaiquina</option>
+				           <option>Nicaragüense</option>
+				           <option>Panameña</option>
+				           <option>Paraguaya</option>
+				           <option>Peruana</option>
+				           <option>Salvadoreña</option>
+				           <option>Sanvicentina</option>
+				           <option>Santalucense</option>
+				           <option>Surinamesa</option>
+				           <option>Trinitense</option>
+				           <option>Uruguaya</option>
+				           <option>Venezolana</option>
+						</optgroup> 
+						<optgroup label="--Oceanía--"> 
+						   <option>Australiana</option>
+				           <option>Fiyiana</option>
+				           <option>Kiribatiana</option>
+				           <option>Marshalesa</option>
+				           <option>Micronesia</option>
+				           <option>Nauruana</option>
+				           <option>Neozelandesa</option>
+				           <option>Palauana</option>
+				           <option>Papuana</option>
+				           <option>Salomonense</option>
+				           <option>Samoana</option>
+				           <option>Tongana</option>
+				           <option>Tuvaluana</option>
+				           <option>Vanatuense</option>
+						</optgroup> 
+						<optgroup label="--África--"> 
+				           <option>Angoleña</option>
+				           <option>Argelina</option>
+				           <option>Beninesa</option>
+				           <option>Bisauguineana</option>
+				           <option>Botsuana</option>
+				           <option>Burkinesa</option>
+				           <option>Burundesa</option>
+				           <option>Caboverdiana</option>
+				           <option>Camerunesa</option>
+				           <option>Congolesa (RC)</option>           
+				           <option>Congolesa (RDC)</option>           
+				           <option>Centroafricana</option>
+				           <option>Chadiana</option>
+				           <option>Comorense</option>
+				           <option>Ecuatoguineana</option>
+				           <option>Egipcia</option>
+				           <option>Eritrea</option>
+				           <option>Etíope</option>
+				           <option>Gabonesa</option>
+				           <option>Gambiana</option>
+				           <option>Ghanesa</option>
+				           <option>Guineana</option>
+				           <option>Keniana</option>
+				           <option>Lesotense</option>
+				           <option>Liberiana</option>
+				           <option>Libia</option>
+				           <option>Malauí</option>
+				           <option>Malgache</option>
+				           <option>Maliense</option>
+				           <option>Marfileña</option>
+				           <option>Marroquí</option>
+				           <option>Mauriciana</option>
+				           <option>Mozambiqueña</option>
+				           <option>Namibia</option>
+				           <option>Nigerina</option>
+				           <option>Nigeriana</option>
+				           <option>Sudafricana</option>
+				           <option>Santotomense</option>
+				           <option>Senegalesa</option>
+				           <option>Seychellense</option>
+				           <option>Sierraleonesa</option>
+				           <option>Somalí</option>
+				           <option>Suazi</option>
+				           <option>Sudanesa</option>
+				           <option>Sursudanesa</option>
+				           <option>Ruandesa</option>
+				           <option>Tanzana</option>
+				           <option>Togolesa</option>
+				           <option>Tunecina</option>
+				           <option>Ugandesa</option>
+				           <option>Yibutiana</option>
+				           <option>Zambiana</option>
+				           <option>Zimbabuense</option>
+				        </optgroup>
+					</select></p>
+					<p>Estado de residencia: 
+						<select name="estado" size="1" required/></p>
+							<option value="" disabled selected hidden>Seleccione un estado</option> 
+						    <option>Aguascalientes</option> 
+						    <option>Baja California</option> 
+						    <option>Baja California Sur</option>}
+						    <option>Campeche</option> 
+						    <option>Chiapas</option> 
+						    <option>Chihuahua</option> 
+						    <option>Ciudad de México</option> 
+						    <option>Coahuila</option> 
+						    <option>Colima</option> 
+						    <option>Durango</option> 
+						    <option>Estado de México</option> 
+						    <option>Guanajuato</option> 
+						    <option>Guerrero</option> 
+						    <option>Hidalgo</option> 
+						    <option>Jalisco</option> 
+						    <option>Michoacán</option> 
+						    <option>Morelos</option> 
+						    <option>Nayarit</option> 
+						    <option>Nuevo León</option> 
+						    <option>Oaxaca</option> 
+						    <option>Puebla</option> 
+						    <option>Querétaro</option> 
+						    <option>Quintana Roo</option> 
+						    <option>San Luis Potosí</option> 
+						    <option>Sinaloa</option> 
+						    <option>Sonora</option> 
+						    <option>Tabasco</option> 
+						    <option>Tamaulipas</option> 
+						    <option>Tlaxcala</option> 
+						    <option>Veracruz</option> 
+						    <option>Yucatán</option> 
+						    <option>Zacatecas</option>
+						</select></p>
+					<p>Municipio: <input type="text" name="municipio" size="30" maxlength="30" pattern="[a-zA-Zá-úÁ-Ú ]+" required/></p>
+					<p>Localidad: <input type="text" name="localidad" size="30" maxlength="30" pattern="[a-zA-Zá-úÁ-Ú ]+" required/></p>
+					<p>Número de teléfono: <input type="text" name="telefono" pattern="[0-9]+" minlength="10" size="10" maxlength="10" required/></p>
+				    <p>Email: <input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required></p>
+					<p>Domicilio: <input type="text" name="domicilio" size="70" maxlength="70" required/></p>
+
+					<h1 class="subt">DATOS LABORALES</h1>
+					<p>Ocupación: <input type="text" name="ocupacion" size="50" maxlength="50" pattern="[a-zA-Zá-úÁ-Ú ]+" required/></p>
+					<p>Ingresos mensuales (MXN): <input type="text" name="ingresos" size="15" maxlength="15" pattern="[0-9]+" required/></p>
+					<p>Ingresos mensuales familiares (MXN): <input type="text" name="ingresosFamiliares" size="30" maxlength="30" pattern="[0-9]+"  required/></p>
+					<p>Grado de escolaridad:
+						<select name="escolaridad" size="1" required/>
+					   	    <option value="" disabled selected hidden>Seleccione el grado de escolaridad</option>
+					        <option>Primaria</option>
+					        <option>Secundaria</option>
+					        <option>Preparatoria</option>
+					        <option>Carrera comercial</option>
+					        <option>Licenciatura</option>
+					        <option>Maestría</option>
+					        <option>Doctorado</option>
+						</select></p>
+					<p>¿Cuántas personas viven con usted?: <input type="text" name="personasCasa" size="2" maxlength="2" pattern="[0-9]+" required/></p>
+					<p>De las personas que viven con usted, ¿Cuántas trabajan?: <input type="text" name="trabajadoresCasa" size="2" maxlength="2" pattern="[0-9]+" required/></p>
+					<p>¿Recibe algún tipo de ayuda del gobierno?:<br/>
+						<input type="radio" name="rdbAG" value="Si" required/>Sí
+						<input type="radio" name="rdbAG" value="No"/>No
+					</p>
+
+					<h1 class="subt">DATOS DE LA VIVIENDA</h1>
+					<p>La vivienda donde reside es:<br/>
+						<input type="radio" name="rdbV" value="Propia" required/>Propia
+						<input type="radio" name="rdbV" value="Alquilada"/>Alquilada
+						<input type="radio" name="rdbV" value="Prestada"/>Prestada
+						<input type="radio" name="rdbV" value="Otra"/>Otra
+					</p>
+					<p>¿Cuántas habitaciones tiene su vivienda?<br/>
+						<input type="radio" name="rdbHab" value="1" required/>1
+						<input type="radio" name="rdbHab" value="2"/>2
+						<input type="radio" name="rdbHab" value="3"/>3
+						<input type="radio" name="rdbHab" value="4"/>4
+						<input type="radio" name="rdbHab" value="5+"/>5+
+					</p>		
+					<p>¿Cuántos baños tiene su vivienda?<br/>
+						<input type="radio" name="rdbB" value="1" required/>1
+						<input type="radio" name="rdbB" value="2"/>2
+						<input type="radio" name="rdbB" value="3+"/>3+
+					</p>
+					<p>Material del techo de la vivienda<br/>
+						<input type="radio" name="rdbT" value="Concreto" required/>Concreto
+						<input type="radio" name="rdbT" value="Lámina"/>Lámina
+						<input type="radio" name="rdbT" value="Madera"/>Madera
+						<input type="radio" name="rdbT" value="Otro"/>Otro
+					</p>
+					<p>Material de las paredes de la vivienda<br/>
+						<input type="radio" name="rdbPR" value="Hormigón" required/>Hormigón
+						<input type="radio" name="rdbPR" value="Ladrillo o bloque"/>Ladrillo o bloque
+						<input type="radio" name="rdbPR" value="Adobe"/>Adobe
+						<input type="radio" name="rdbPR" value="Madera"/>Madera
+						<input type="radio" name="rdbPR" value="Otro"/>Otro
+					</p>		
+					<p>Material del piso de la vivienda<br/>
+						<input type="radio" name="rdbPS" value="Cemento" required/>Cerámica
+						<input type="radio" name="rdbPS" value="Cemento"/>Ladrillo o cemento
+						<input type="radio" name="rdbPS" value="Mosaico"/>Mosaico
+						<input type="radio" name="rdbPS" value="Parquet"/>Parquet
+						<input type="radio" name="rdbPS" value="Cantera"/>Cantera
+						<input type="radio" name="rdbPS" value="Tierra"/>Tierra
+						<input type="radio" name="rdbPS" value="Otro"/>Otro
+					</p>
+					<p>¿Su vivienda cuenta con energía eléctrica?<br/>
+						<input type="radio" name="rdbEE" value="Si" required/>Sí
+						<input type="radio" name="rdbEE" value="No"/>No
+					</p>		
+					<p>¿Su vivienda cuenta con servicio de agua potable?<br/>
+						<input type="radio" name="rdbAP" value="Si" required/>Sí
+						<input type="radio" name="rdbAP" value="No"/>No
+					</p>
+					<p>¿Su vivienda cuenta con servicio de alcantarillado?<br/>
+						<input type="radio" name="rdbAL" value="Si" required/>Sí
+						<input type="radio" name="rdbAL" value="No"/>No
+					</p>		
+					<p>¿Su vivienda cuenta con línea telefónica?<br/>
+						<input type="radio" name="rdbTL" value="Si" required/>Sí
+						<input type="radio" name="rdbTL" value="No"/>No
+					</p>
+					<p>¿Su vivienda cuenta con conexión a internet?<br/>
+						<input type="radio" name="rdbIN" value="Si" required/>Sí
+						<input type="radio" name="rdbIN" value="No"/>No
+					</p>		
+					<p>¿La calle principal de su domicilio está pavimentada?<br/>
+						<input type="radio" name="rdbCP" value="Si" required/>Sí
+						<input type="radio" name="rdbCP" value="No"/>No
+					</p>		
+					<p>¿Con cuántos automóviles y/o camionetas cuenta en su vivienda?<br/>
+						<input type="radio" name="rdbAU" value="0" required/>0
+						<input type="radio" name="rdbAU" value="1"/>1
+						<input type="radio" name="rdbAU" value="2"/>2
+						<input type="radio" name="rdbAU" value="3+"/>3+
+					</p>
+					<p>¿Con cuántas computadoras cuenta en su vivienda?<br/>
+						<input type="radio" name="rdbPCS" value="0" required/>0
+						<input type="radio" name="rdbPCS" value="1"/>1
+						<input type="radio" name="rdbPCS" value="2"/>2
+						<input type="radio" name="rdbPCS" value="3+"/>3+
+					</p>
+					<p>¿Con cuántos celulares cuenta en su vivienda?<br/>
+						<input type="radio" name="rdbCL" value="0" required/>0
+						<input type="radio" name="rdbCL" value="1"/>1
+						<input type="radio" name="rdbCL" value="2"/>2
+						<input type="radio" name="rdbCL" value="3+"/>3+
+					</p>
+					<p>¿Con cuántas televisiones cuenta en su vivienda?<br/>
+						<input type="radio" name="rdbTV" value="0" required/>0
+						<input type="radio" name="rdbTV" value="1"/>1
+						<input type="radio" name="rdbTV" value="2"/>2
+						<input type="radio" name="rdbTV" value="3+"/>3+
+					</p>
+
+					<h1 class="subt">DATOS DE GASTOS</h1>
+					<p>¿Cuánto gasta en alimentos mensualmente (MXN)? <input type="text" name="gastoAlimentos" size="10" maxlength="10" pattern="[0-9]+" required/></p>
+					<p>¿Cuánto gasta en servicios mensualmente (MXN)? <input type="text" name="gastoServicios" size="10" maxlength="10" pattern="[0-9]+" required/></p>
+					<p>¿Cuánto gasta en ropa mensualmente (MXN)? <input type="text" name="gastoRopa" size="10" maxlength="10" pattern="[0-9]+" required/></p>
+					<p>¿Cuánto gasta en transporte mensualmente (MXN)? <input type="text" name="gastoTransporte" size="10" maxlength="10" pattern="[0-9]+" required/></p>
+					<p required>¿Cuánto tiempo tarda en trasladarse de casa al trabajo o la escuela?<br/>
+						<input type="radio" name="rdbTT" value="Menos de 15 min" required/>Menos de 15 min
+						<input type="radio" name="rdbTT" value="16 - 30 min"/>16 min - 30 min
+						<input type="radio" name="rdbTT" value="31 min - 1 hr"/>31 min - 1 hr
+						<input type="radio" name="rdbTT" value="1 - 1.5 hr"/>1 hr - 1.5 hr
+						<input type="radio" name="rdbTT" value="1.5 hr - 2 hr"/>1.5 hr - 2 hr
+						<input type="radio" name="rdbTT" value="Más de 2 hr"/>Más de 2 hr
+					</p>
+					<p>¿Cuántas mascotas tiene?<br/>
+						<input type="radio" name="rdbMS" value="0" required/>0
+						<input type="radio" name="rdbMS" value="1"/>1
+						<input type="radio" name="rdbMS" value="2"/>2
+						<input type="radio" name="rdbMS" value="3"/>3
+						<input type="radio" name="rdbMS" value="4+"/>4+
+					</p>
+					<input class="button" type="submit" value="Enviar respuestas">
+					<input class="button" type="reset" value="Borrar todo">
+				</form>
+				<a href="EstudioSocioeconómicoMainPage.html"><input class="button" type="submit" value="Regresar"></a>
+			</div>
+		</article>
+	</section>
+	<footer id="main-footer">
+		<table>
+			<tr>
+				<td>
+					<p>&copy; 2023 by Josué Eleazar Burgos Urías</p>
+					<p>SurveyTech.com</p>
+				</td>
+				<td>
+					<p>SOBRE EL DESARROLLADOR</p>
+					<p>Hola, mi nombre es Josué Eleazar Burgos Urías, y soy el creador de este sitio.
+						Actualmente soy estudiante de preparatoria, en la especialidad de programación.</p>					
+				</td>
+				<td>
+					<p>SOBRE LA EMPRESA</p>
+					<p>SurveyTech.com es una empresa que realiza encuestas online para realizar estadísticas, a fin de ayudar a otras empresas que contratan sus servicios a conocer mejor a sus clientes, y así puedan ofrecer mejores productos a estos.</p>
+				</td>
+			</tr>
+		</table>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/*Márgenes, tamaños de letra y tipografía de la página principal*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+* {
+    font-family: 'Allerta', arial, Tahoma;
+    box-sizing: border-box;
+    font-weight: bolder;
+    text-align: center;
+    color: #000;
+}
+h1,h2,h3,h4,p {
+    color: #FFF8F0;    
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+h1 {
+    font-size: 2.3em;
+    line-height: 0.2em;
+}
+.subt{
+    font-size: 1.8em;
+    line-height: 1.2em;
+    font-weight: bolder;
+}
+/* CABECERA */
+#main-header {
+    background: linear-gradient(to left, #BF8A4C, #76460E);
+    color: white;
+    height: 180px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-size: 200% 100%;
+    animation: cambiar 4s ease-in-out infinite;
+    padding: 0.5px;
+    border-radius: 0 0 85% 85% / 30%;
+}   
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+/* CONTENIDO */
+#main-content {
+    backdrop-filter: blur(5px);
+    width: 90%;
+    max-width: 1250px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+#main-content header,
+#main-content .content {
+    padding: 40px;
+}
+.centrarParrafo{
+    text-align:center; border:none; padding:8px;
+}
+.texto-borde {
+    -webkit-text-stroke: 2px black;
+    color: white; 
+}
+.button{
+    border-radius: 30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:40px;
+    padding-right:40px;
+    font-size:20px;
+}
+select{
+    height: 30px;
+}
+.input{
+    height: 30px;
+}
+#main-footer {
+    background: #BA966F;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+}
+#main-footer p {
+    margin: 0;
+}   
+.logo{
+    width: 70px;
+    border-radius: 20px;
+}
+.encabezado{
+    margin-top: 20px;
+}
+.flexbox-align {
+    display: flex;
+    justify-content: center;
+}
+menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+    gap: 1em;
+}
